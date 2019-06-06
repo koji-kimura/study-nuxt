@@ -11,10 +11,14 @@
 
 <style>
 html {
-  font-family: "Source Sans Pro", 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, sans-serif;
+  font-family: 'Source Sans Pro', 游ゴシック体, 'Yu Gothic', YuGothic,
+    'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo,
+    sans-serif;
   font-size: 16px;
 }
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: normal;
 }
 .title {
@@ -25,5 +29,20 @@ h1, h2, h3 {
 .container {
   width: 80%;
   margin: 0 auto;
+}
+
+.slide-left-enter {
+  transform: translateX(2000px);
+  opacity: 0;
+}
+.slide-left-enter-active {
+  transition: all 0.3s linear;
+}
+.slide-left-leave-to {
+  transform: translateX(-2000px);
+  opacity: 0;
+}
+.slide-left-leave-active {
+  transition: all 0.3s linear;
 }
 </style>
